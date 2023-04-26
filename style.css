@@ -169,7 +169,7 @@ nav ul li:hover {
 }
 
 #container_1 {
-    background-image: url(img/banner-home.jpg);
+    background-image: url(img/banner-home.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,7 +242,7 @@ nav ul li:hover {
 }
 
 #container_2 {
-    background-image: url(img/bg-pontos.jpg);
+    background-image: url(img/bg-pontos.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -447,7 +447,7 @@ nav ul li:hover {
 }
 
 #container_4 {
-    background-image: url(img/bg-circles.jpg);
+    background-image: url(img/bg-circles.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -621,7 +621,7 @@ nav ul li:hover {
 
 
 #container_5 {
-    background-image: url(img/bg-precos.png);
+    background-image: url(img/bg-precos.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
