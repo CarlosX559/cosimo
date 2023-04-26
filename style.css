@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&family=Montserrat:wght@400;700;800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Montserrat';
     box-sizing: border-box;
@@ -170,10 +174,12 @@ nav ul li:hover {
     margin: 0px;
     color: #FFFFFF;
 }
+
 .btn_container_1:hover {
     background-color: #FFFFFF;
 }
-.btn_container_1:hover > h2 {
+
+.btn_container_1:hover>h2 {
     color: #405261;
 }
 
@@ -349,7 +355,7 @@ nav ul li:hover {
 }
 
 .area_texts_container_3 a {
-    max-width: 260px;
+    max-width: max-content;
 }
 
 .btn_container_3 {
@@ -787,6 +793,10 @@ footer {
 
     }
 
+    .area_menu {
+        padding: 0px 20px;
+    }
+
     .menu_mobile nav ul li a:hover {
         color: #fff;
     }
@@ -826,7 +836,7 @@ footer {
         width: 40px;
         height: 4px;
         border-radius: 100px;
-        background: #151515;
+        background: #fff;
         box-shadow: 4px 2px 4px rgb(255 255 255 / 40%);
     }
 
@@ -835,8 +845,12 @@ footer {
         width: 40px;
         height: 4px;
         border-radius: 100px;
-        background: #151515;
+        background: #fff;
         box-shadow: 4px 2px 4px rgb(255 255 255 / 40%);
+    }
+
+    nav ul li {
+        font-size: 18px;
     }
 
     .menu_mobile {
@@ -848,10 +862,10 @@ footer {
         position: absolute;
         top: 120px;
         left: 0px;
-        background: #E5EEEB;
+        background: #405261;
         box-shadow: 0px 4px 43px rgba(255, 255, 255, 0.36);
         z-index: 10;
-        padding: 40px 0px 40px 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     .menu_mobile nav ul {
@@ -865,7 +879,227 @@ footer {
         font-size: 18px;
     }
 
+    #container_1 {
+        height: 600px;
+    }
 
+    .container_1_int {
+        padding: 0px 20px;
+    }
 
+    .area_container_2 {
+        flex-direction: column-reverse;
+    }
 
+    .area_container_2 img {
+        max-width: 400px;
+    }
+
+    .area_container_3 {
+        flex-direction: column;
+    }
+
+    .area_2 {
+        flex-direction: column-reverse;
+    }
+
+    .area_container_3 img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .area_container_4_total {
+        justify-content: center;
+    }
+
+    .container_4_int {
+        gap: 20px;
+    }
+
+    .title_container_5 h2 {
+        font-size: 28px;
+    }
+
+    .area_container_5 {
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .area_footer {
+        padding: 40px 20px;
+    }
+
+    .copy p {
+        padding: 0px 20px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .title_container_1 h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .btn_container_1 h2 {
+        font-size: 14px;
+    }
+
+    .area_texts_container_2 {
+        gap: 15px;
+    }
+
+    .title_container_2 h2 {
+        font-size: 22px;
+    }
+
+    .sub_title_container_2 p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .info_2_container_2 p {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .btn_container_2 h2 {
+        font-size: 14px;
+    }
+
+    .container_3_int {
+        gap: 40px;
+    }
+
+    .area_texts_container_3 {
+        gap: 15px;
+    }
+
+    .title_container_3 h2 {
+        font-size: 26px;
+    }
+
+    .title_container_3_text h2 {
+        font-size: 22px;
+    }
+
+    .sub_title_container_3 p {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .info_container_3 p {
+        line-height: 22px;
+    }
+
+    .title_container_3_text_1 h2 {
+        font-size: 22px;
+    }
+
+    .title_container_4 h2 {
+        font-size: 26px;
+    }
+
+    .box_1_int {
+        gap: 15px;
+    }
+
+    .title_box_1 h2 {
+        font-size: 26px;
+        line-height: normal;
+    }
+
+    .sub_title_box_1 p {
+        line-height: 22px;
+    }
+
+    .title_container_5 h2 {
+        font-size: 26px;
+    }
+
+    .card_container_5 {
+        height: 470px;
+    }
+
+    .title_card h2 {
+        font-size: 18px;
+    }
+
+    .sub_title_card p {
+        font-size: 14px;
+    }
+
+    .info_1 p {
+        font-size: 14px;
+    }
+
+    .price h2 {
+        font-size: 30px;
+    }
+
+    .btn_card h2 {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .title_container_1 h2 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .area_container_2 {
+        padding: 0px 20px;
+    }
+
+    .container_3_int {
+        padding: 0px 20px;
+    }
+
+    .title_container_3 h2 {
+        margin-bottom: -20px;
+    }
+
+    #container_4 {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .title_container_5 h2 {
+        font-size: 20px;
+    }
+
+    #container_5 {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .card_container_5 {
+        max-width: 360px;
+    }
+
+    .title_card h2 {
+        font-size: 20px;
+    }
+
+    .sub_title_card p {
+        font-size: 16px;
+    }
+
+    .title_box_1 h2 {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .info_container_4 h2 {
+        font-size: 16px;
+    }
+
+    .sub_title_box_1 p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .text_footer h2 {
+        font-size: 15px;
+    }
 }
