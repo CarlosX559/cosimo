@@ -862,12 +862,12 @@ footer {
 
     @keyframes move {
         0% {
-            top: -100%;
-
+            right: -100%;
+            
         }
 
         100% {
-            top: 120px;
+            right: 0px;
         }
 
     }
@@ -878,7 +878,8 @@ footer {
         flex-direction: column;
         gap: 8px;
         position: absolute;
-        right: 40px;
+        right: 20px;
+        top: 30px;
     }
 
     .line_1 {
@@ -892,7 +893,7 @@ footer {
     }
 
     .menu_mobile_close div {
-        width: 40px;
+        width: 30px;
         height: 4px;
         border-radius: 100px;
         background: #fff;
@@ -901,7 +902,7 @@ footer {
 
 
     .menu_mobile_open div {
-        width: 40px;
+        width: 30px;
         height: 4px;
         border-radius: 100px;
         background: #fff;
@@ -912,17 +913,29 @@ footer {
         font-size: 18px;
     }
 
+    /*.menu_mobile_total {
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }*/
+    
     .menu_mobile {
         transition: all ease-in 400ms;
         display: none;
         justify-content: center;
         text-align: center;
         width: 100%;
-        position: absolute;
-        top: 120px;
-        left: 0px;
+        max-width: 240px;
+        height: 100%;
+        position: fixed;
+        top: 140px;
+        right: 0px;
         background-color: #2e496f;
-        box-shadow: 0px 4px 43px rgba(255, 255, 255, 0.36);
         z-index: 10;
         padding: 20px 0px 20px 0px;
     }
@@ -1103,6 +1116,9 @@ footer {
 }
 
 @media(max-width: 480px) {
+    #container_1 {
+        height: 350px;
+    }
     .title_container_1 h2 {
         font-size: 26px;
         line-height: 28px;
