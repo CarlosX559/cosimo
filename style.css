@@ -933,11 +933,11 @@ footer {
         max-width: 240px;
         height: 100%;
         position: fixed;
-        top: 140px;
+        top: 0px;
         right: 0px;
         background-color: #2e496f;
         z-index: 10;
-        padding: 20px 0px 20px 0px;
+        padding: 40px 0px 20px 0px;
     }
 
     .menu_mobile nav ul {
