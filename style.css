@@ -103,9 +103,12 @@ body {
 }
 
 header {
-    height: 140px;
+    height: 120px;
     background-color: #1a3c6c;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;    
+    z-index: 999;
 }
 
 .container_menu {
@@ -935,7 +938,7 @@ footer {
         position: fixed;
         top: 0px;
         right: 0px;
-        background-color: #2e496f;
+        background-color: #1a3c6c;
         z-index: 10;
         padding: 40px 0px 20px 0px;
     }
