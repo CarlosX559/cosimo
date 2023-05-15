@@ -85,6 +85,71 @@ html {
     border-radius: 100px;
 }
 
+.area_menu_drop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.area_menu_drop_int {
+    display: -webkit-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.area_menu_drop_int svg {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.area_menu_drop li {
+    font-family: 'Marvel';
+    font-weight: var(--font-weight-700);
+    font-size: 19px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu_drop_down a li {
+    font-family: 'Marvel';
+    font-weight: var(--font-weight-700);
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+    transition: all ease 0.3s;
+    text-transform: none;
+}
+
+.menu_drop_down a li:hover {
+    color: #fff;
+}
+
+.area_menu_drop:hover > .menu_drop_down {
+    opacity: 1;
+    max-height: max-content;
+    transform: translateX(0%) rotateX(0deg);
+    transition-timing-function: ease-out;
+}
+
+.menu_drop_down {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    max-height: 0%;
+    transform: translateX(0%) rotateX(-90deg);
+    transform-origin: top center;
+    top: calc(100% + 10px);
+    background-color: #405261;
+    padding: 15px 10px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all ease-in 0.3s;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -107,7 +172,7 @@ header {
     background-color: #1a3c6c;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 100%;    
+    width: 100%;
     z-index: 999;
 }
 
@@ -123,7 +188,7 @@ header {
 .container_menu_int {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
 }
 
 .area_menu {
@@ -871,7 +936,7 @@ footer {
     @keyframes move {
         0% {
             right: -100%;
-            
+
         }
 
         100% {
@@ -931,7 +996,7 @@ footer {
         left: 0;
         z-index: 99;
     }*/
-    
+
     .menu_mobile {
         transition: all ease-in 400ms;
         display: none;
@@ -1127,6 +1192,7 @@ footer {
     #container_1 {
         height: 350px;
     }
+
     .title_container_1 h2 {
         font-size: 26px;
         line-height: 28px;
