@@ -88,6 +88,9 @@ html {
 .area_menu_drop {
     position: relative;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 220px;
 }
 
 .area_menu_drop_int {
@@ -123,6 +126,7 @@ html {
     letter-spacing: 0.25px;
     transition: all ease 0.3s;
     text-transform: none;
+    text-align: left;
 }
 
 .menu_drop_down a li:hover {
@@ -147,7 +151,7 @@ html {
     transform-origin: top center;
     top: calc(100% - 10px);
     background-color: #405261;
-    padding: 15px 10px;
+    padding: 15px 15px;
     width: 100%;
     border-radius: 5px;
     transition: all ease-in 0.3s;
@@ -236,7 +240,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     list-style: none;
     height: 100%;
     padding: 0px;
