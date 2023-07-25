@@ -197,6 +197,74 @@
         </div>
     </section>
 
+   
+    <div class="container_video">
+        <div class="container_video_int">
+            <div class="area_video">
+
+                <div class="title_video">
+                    <h2>
+                        Veja como funciona 
+                    </h2>
+                </div>
+
+                <div class="area_player">
+                    <div class="up_container">
+                      <div class="player-wrapper">
+                        <video class="player" width="100%" height="auto" preload="metadata" controls loop muted
+                          playsinline>
+                          <source src="video/moviva.mp4" type="video/mp4">
+                          </source>
+                        </video>
+                        <script defer>
+      
+                          var player = document.querySelector('.player');
+                          player.controls = false;
+                          setTimeout( () => {
+                            player.play();
+                          }, 1000);
+                          function playClick() {
+      
+                            player.volume = 1;
+                            player.muted = false;
+                            player.currentTime = 0;
+                            player.controls = false;
+      
+                            document.querySelector(".thumb_1").style.display = "none";
+                            //document.querySelector(".hidden_controls").style.display = "none";
+      
+                          }
+      
+                          function pauseClick() {
+                            player.pause();
+                            document.querySelector(".thumb_2").style.display = "flex";
+                          }
+      
+                          function returnVideo() {
+                            player.play();
+                            document.querySelector(".thumb_2").style.display = "none";
+                          }
+      
+                        </script>
+      
+                        <div class="thumb_1" onclick="playClick()">
+                          <img class="icon_video" src="img/video.png" alt="" width="50" height="50">
+                        </div>
+      
+                        <div class="thumb_2" onclick="returnVideo()">
+                          <img class="icon_video" src="img/video.png" alt="" width="50" height="50">
+                        </div>
+      
+                        <div class="hidden_controls"></div>
+      
+                        <div class="glass" onclick="pauseClick()"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
     <section id="container_2">
         <div class="container_2">
             <div class="container_2_int">
